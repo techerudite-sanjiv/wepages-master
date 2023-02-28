@@ -1,0 +1,22 @@
+
+
+.example{
+    border: 1px solid black;
+  }
+  .startDiv{
+    border-top: 5px solid red;
+    border-left: 6px solid red;
+    border-right: 1px solid red;
+    background-color: rgb(112, 112, 229) !important;
+  }
+  .midDiv {
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    background-color: rgb(112, 112, 229) !important;
+  }
+  .endDiv{
+    border-bottom: 1px solid red;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    background-color: rgb(112, 112, 229) !important;
+  }

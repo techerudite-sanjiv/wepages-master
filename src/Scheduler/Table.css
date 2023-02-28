@@ -1,0 +1,24 @@
+/* table thead,tbody tr td,th{
+    border:1px solid gold;
+    height: 20px;
+    padding: 30px 60px;
+  }
+.e-time-slots span{
+  
+    padding: 100px 35px;
+}
+.scheduler-table{
+    display: flex;
+}
+.time-cells-wrap table{
+    width: 10%;
+}
+.content-wrap table{
+    width: 90%;
+} */
+
+
+.left-timer{
+    border-top: 1px solid #918585;
+    border-right: 1px solid #8f8383;
+}
