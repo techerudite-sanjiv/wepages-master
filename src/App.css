@@ -49,5 +49,5 @@
 
 .abc{
   display: grid;
-  grid-template-columns:11% auto;
+  grid-template-columns:10% auto;
 }

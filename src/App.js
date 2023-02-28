@@ -6,21 +6,25 @@ import SingleUser from "./SingleUser";
 import Today from "./Today";
 import './App.css'
 import Abc from "./Abc";
+import Table2 from "./Scheduler/Table2";
 const App = () => {
   return (
     <>
-      {/* <div className="abc">
+      <div className="abc my-5">
         <div>
           <Table1 />
         </div>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
+        {/* <div style={{ display: "flex", justifyContent: "space-between" }}>
           {bookings.map((item, index) => {
             return <SingleUser {...item} key={index} />;
           })}
-        </div>
-      </div> */}
-      {/* <Today/> */}
-    <Abc/>
+        </div> */}
+       <div>
+       {/* <Table2/> */}
+       </div>
+      </div>
+      <Today/>
+    {/* <Abc/> */}
       {/* <Table1/> */}
       {/* <Table/> */}
     </>

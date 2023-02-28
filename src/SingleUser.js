@@ -8,24 +8,25 @@ const endTime = 18;
 
 const minHeight = 90;
 const SingleUser = (props) => {
-  const { name,eventStartTime, eventEndTime } = props;
+  const { name, eventStartTime, eventEndTime } = props;
   const modifiedEventStartTime = convertTimeToDecimal(eventStartTime);
   const modifiedEventEndTime = convertTimeToDecimal(eventEndTime);
-  console.log("event", { modifiedEventStartTime,modifiedEventEndTime,minHeight },(modifiedEventEndTime - modifiedEventStartTime) * minHeight);
+  console.log("event", { modifiedEventStartTime, modifiedEventEndTime, minHeight }, (modifiedEventEndTime - modifiedEventStartTime) * minHeight);
 
   return (
-    <div
-      style={{
-        borderStyle: "solid",
-        borderLeftColor: "#CACFD2",
-        height: (endTime - startTime) * minHeight,
-        width: "100%",
-        borderWidth: 0,
-        borderLeftWidth:0,
-        position: "relative",
-      }}
-    >
-     
+    <>
+      <div
+        style={{
+          borderStyle: "solid",
+          borderLeftColor: "#CACFD2",
+          height: (endTime - startTime) * minHeight,
+          width: "100%",
+          borderWidth: 0,
+          borderLeftWidth: 0,
+          position: "relative",
+        }}
+      >
+      </div>
       <div
         style={{
           borderStyle: "solid",
@@ -36,13 +37,12 @@ const SingleUser = (props) => {
           borderLeftWidth: 3,
           position: "absolute",
           left: 0,
-          background:"#D4E6F1",
+          background: "#D4E6F1",
           top: (modifiedEventStartTime - startTime) * minHeight,
         }}
       >
-        
       </div>
-    </div>
+    </>
   );
 };
 

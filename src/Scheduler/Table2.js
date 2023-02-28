@@ -1,6 +1,9 @@
 import React from 'react'
+import { Table } from 'reactstrap';
+import SingleUser from '../SingleUser';
+import { bookings } from '../constants';
 import './Table.css'
-const Table1 = () => {
+const Table2 = () => {
     const startTime = 9;
     const endTime = 18;
     const minHeight = 90;
@@ -15,26 +18,32 @@ const Table1 = () => {
                 borderLeftWidth: 0,
                 position: "relative",
             }}>
-            <table>
-                <thead className='left-timer'>
-                    {[...Array(10)].map((e, i) => {
-                        
+            <table style={{ width: "100%" }}>
+
+                <tbody>
+
+                    {[...Array(19)].map((e, i) => {
                         return (
                             <>
-                                <tr style={{ height: ((startTime+1 )- startTime) * minHeight  }} className="abbvb">
-                                    <th >
-                                        <span style={{ position: "relative", top: -30, left: 0, padding: "0 57px" }}>{9 + i}:00</span>
+                                <tr className='bbc'>
+                                    <th scope="row" style={{ height: '46px' }}>
+                                        
                                     </th>
                                 </tr>
-                                
                             </>
                         )
                     })}
-                </thead>
-                
+                   
+                   
+                       {bookings.map((item, index) => {
+                            return <SingleUser {...item} key={index} />;
+                        })}
+
+                    
+                </tbody>
             </table>
         </div>
     )
 }
 
-export default Table1
+export default Table2

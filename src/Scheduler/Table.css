@@ -17,8 +17,21 @@
     width: 90%;
 } */
 
-
 .left-timer{
-    border-top: 1px solid #918585;
-    border-right: 1px solid #8f8383;
+    border-top: 1px solid #c3bcc1;
+    border-bottom: 1px solid #c3bcc1;
+   
 }
+.bbc {
+    border-left: 1px solid #b5afb4;
+  
+}
+.bbc:nth-child(odd) {
+    border-top: 1px solid #c3bcc1;
+    border-bottom: 1px dashed #b5b3b3;
+}
+.bbc:nth-child(even) {
+
+    /* border-bottom: 1px solid red; */
+}
+

@@ -1,22 +1,21 @@
 export const bookings = [
     {
-      name: " niranjan",
+      name: "Event1",
       eventStartTime: "9:00",
       eventEndTime: "10:00",
     },
     {
-      name: "akshay",
+      name: "Event2",
       eventStartTime: "17:00",
       eventEndTime: "18:00",
     },
     {
-      name: "piyush",
-      eventStartTime: "09:00",
-      eventEndTime: "11:00",
+      name: "Event3",
+      eventStartTime: "12:00",
+      eventEndTime: "13:00",
     },
     {
-      name: "ujjaval",
-
+      name: "Event4",
       eventStartTime: "10:15",
       eventEndTime: "11:00",
     },
