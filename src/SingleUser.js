@@ -1,38 +1,49 @@
 import React from "react";
 import { convertTimeToDecimal } from "./eventData"; 
-// import { convertTimeToDecimal } from "./constants";
-import './singleuser.css'
 
 const startTime = 9;
 const endTime = 18;
 
-const minHeight = 90;
-const SingleUser = (props) => {
-  const { name, eventStartTime, eventEndTime } = props;
-  const modifiedEventStartTime = convertTimeToDecimal(eventStartTime);
-  const modifiedEventEndTime = convertTimeToDecimal(eventEndTime);
-  console.log("event", { modifiedEventStartTime, modifiedEventEndTime, minHeight }, (modifiedEventEndTime - modifiedEventStartTime) * minHeight);
+const userStartTime = 12;
+const userEndTime = 16;
 
+const minHeight = 60;
+const SingleUser = (props) => {
+  const { name, eventEndTime, eventStartTime } = props;
+  const modifiedEventEndTime = convertTimeToDecimal(eventEndTime);
+  const modifiedEventStartTime = convertTimeToDecimal(eventStartTime);
+  console.log(
+    "eeee",
+    { modifiedEventEndTime, modifiedEventStartTime, minHeight },
+    (modifiedEventEndTime - modifiedEventStartTime) * minHeight
+  );
   return (
-    <>
-    
-    
+    <div
+      style={{
+        borderStyle: "solid",
+        borderLeftColor: "green",
+        height: (endTime - startTime) * minHeight,
+        width: "100%",
+        borderWidth: 0,
+        borderLeftWidth: 10,
+        position: "relative",
+      }}
+    >
       <div
         style={{
           borderStyle: "solid",
-          borderLeftColor: "blue",
+          borderLeftColor: "red",
           width: "100%",
           height: (modifiedEventEndTime - modifiedEventStartTime) * minHeight,
           borderWidth: 0,
-          borderLeftWidth: 3,
+          borderLeftWidth: 10,
           position: "absolute",
-          left: 0,
-          background: "#D4E6F1",
+          background:"aqua",
+          left: 5,
           top: (modifiedEventStartTime - startTime) * minHeight,
         }}
-      >
-     </div>
-    </>
+      ></div>
+    </div>
   );
 };
 
