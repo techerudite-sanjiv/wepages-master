@@ -1,7 +1,5 @@
-
+import './App.css'
 import Table1 from "./Scheduler/Table1";
-
-
 import Table2 from "./Scheduler/Table2";
 const App = () => {
   return (
