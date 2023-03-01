@@ -1,8 +1,10 @@
-table,tbody tr, tbody tr th{
-    /* border: 1px solid black; */
-    border-collapse: collapse;
-  }
+/* table,
+tbody tr,
+tbody tr th {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
 
-  .time-cells-wrap{
-    display: flex;
-  }
+.time-cells-wrap {
+  display: flex;
+} */

@@ -1,7 +1,6 @@
 import React from 'react'
-import { Table } from 'reactstrap';
 import SingleUser from '../SingleUser';
-import { bookings } from '../constants';
+import { bookings } from '../eventData';
 import './Table.css'
 const Table2 = () => {
     const startTime = 9;
@@ -19,29 +18,26 @@ const Table2 = () => {
                 position: "relative",
             }}>
             <table style={{ width: "100%" }}>
-
                 <tbody>
-
-                    {[...Array(19)].map((e, i) => {
+                    {[...Array(18)].map((e, i) => {
                         return (
                             <>
                                 <tr className='bbc'>
-                                    <th scope="row" style={{ height: '46px' }}>
-                                        
+                                    <th scope="row" style={{ height: '45px' }}>
+
                                     </th>
                                 </tr>
                             </>
                         )
                     })}
-                   
-                   
-                       {bookings.map((item, index) => {
-                            return <SingleUser {...item} key={index} />;
-                        })}
-
-                    
                 </tbody>
+                <div  >
+                    {bookings.map((item, index) => {
+                        return <SingleUser {...item} key={index} />;
+                    })}
+                </div>
             </table>
+
         </div>
     )
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { convertTimeToDecimal } from "./constants";
+import { convertTimeToDecimal } from "./eventData"; 
 // import { convertTimeToDecimal } from "./constants";
 import './singleuser.css'
 
@@ -15,18 +15,8 @@ const SingleUser = (props) => {
 
   return (
     <>
-      <div
-        style={{
-          borderStyle: "solid",
-          borderLeftColor: "#CACFD2",
-          height: (endTime - startTime) * minHeight,
-          width: "100%",
-          borderWidth: 0,
-          borderLeftWidth: 0,
-          position: "relative",
-        }}
-      >
-      </div>
+    
+    
       <div
         style={{
           borderStyle: "solid",
@@ -41,7 +31,7 @@ const SingleUser = (props) => {
           top: (modifiedEventStartTime - startTime) * minHeight,
         }}
       >
-      </div>
+     </div>
     </>
   );
 };

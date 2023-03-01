@@ -1,37 +1,19 @@
-/* table thead,tbody tr td,th{
-    border:1px solid gold;
-    height: 20px;
-    padding: 30px 60px;
-  }
-.e-time-slots span{
-  
-    padding: 100px 35px;
-}
-.scheduler-table{
-    display: flex;
-}
-.time-cells-wrap table{
-    width: 10%;
-}
-.content-wrap table{
-    width: 90%;
-} */
-
-.left-timer{
+.left-timer {
     border-top: 1px solid #c3bcc1;
     border-bottom: 1px solid #c3bcc1;
-   
+
 }
+
 .bbc {
     border-left: 1px solid #b5afb4;
-  
+
 }
+
 .bbc:nth-child(odd) {
     border-top: 1px solid #c3bcc1;
     border-bottom: 1px dashed #b5b3b3;
 }
-.bbc:nth-child(even) {
 
-    /* border-bottom: 1px solid red; */
+.bbc:last-child {
+    border-bottom: 1px solid #b5b3b3;
 }
-
